@@ -11,8 +11,8 @@
     <title>{{ config('app.name', 'Laravel') }}</title>
 
     <!-- Styles -->
-	<link href="{{ mix('/css/app.css') }}" rel="stylesheet"> 
-	
+	<link href="{{ mix('/css/app.css') }}" rel="stylesheet">
+
 	@yield('css')
 
 </head>
@@ -37,7 +37,7 @@
 
                         <h4 class="c-grey-900 mT-10 mB-30">@yield('page-header')</h4>
 
-						@include('admin.partials.messages') 
+						@include('admin.partials.messages')
 						@yield('content')
 
                     </div>
@@ -46,8 +46,8 @@
 
             <!-- ### $App Screen Footer ### -->
             <footer class="bdT ta-c p-30 lh-0 fsz-sm c-grey-600">
-                <span>Copyright © 2017 Designed by
-                    <a href="https://colorlib.com" target='_blank' title="Colorlib">Colorlib</a>. All rights reserved.</span>
+                <span>Copyright © 2019 Developed by
+                    <a href="https://cloud-us.eu" target='_blank' title="Cloudus">CLOUDUS</a>. All rights reserved.</span>
             </footer>
         </div>
     </div>

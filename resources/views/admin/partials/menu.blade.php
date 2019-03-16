@@ -8,14 +8,14 @@
         <span class="icon-holder">
             <i class="c-blue-500 ti-home"></i>
         </span>
-        <span class="title">Dashboard</span>
+        <span class="title"></span>
     </a>
 </li>
-<li class="nav-item">
-    <a class="sidebar-link {{ starts_with($route, ADMIN . '.users') ? 'active' : '' }}" href="{{ route(ADMIN . '.users.index') }}">
-        <span class="icon-holder">
-            <i class="c-brown-500 ti-user"></i>
-        </span>
-        <span class="title">Users</span>
-    </a>
-</li>
+{{--<li class="nav-item">--}}
+    {{--<a class="sidebar-link {{ starts_with($route, ADMIN . '.users') ? 'active' : '' }}" href="{{ route(ADMIN . '.users.index') }}">--}}
+        {{--<span class="icon-holder">--}}
+            {{--<i class="c-brown-500 ti-user"></i>--}}
+        {{--</span>--}}
+        {{--<span class="title">Users</span>--}}
+    {{--</a>--}}
+{{--</li>--}}

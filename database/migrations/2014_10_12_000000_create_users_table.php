@@ -22,7 +22,10 @@ class CreateUsersTable extends Migration
             $table->string('avatar')->nullable();
             $table->integer('role')->default(0);
             $table->text('bio')->nullable();
+            $table->string('mobile_phone')->unique();
+
             $table->rememberToken();
+            $table->softDeletes();
             $table->timestamps();
         });
     }
