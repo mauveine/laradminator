@@ -188,16 +188,33 @@
   }
 
   .sidebar-link {
-    &.active::before {
-      background: $md-blue-500;
-      border-radius: 50%;
-      content: '';
-      display: block;
-      height: 8px;
-      left: -4px;
-      position: absolute;
-      top: calc(50% - 4px);
-      width: 8px;
+    font-weight: $font-weight-bold;
+    i{
+      color: $md-blue-100;
+    }
+
+    &:hover{
+      i {
+        color: $md-blue-500;
+      }
+    }
+
+    &.active {
+      color: $md-blue-500;
+      &::before {
+        background: $md-blue-500;
+        border-radius: 50%;
+        content: '';
+        display: block;
+        height: 8px;
+        left: -4px;
+        position: absolute;
+        top: calc(50% - 4px);
+        width: 8px;
+      }
+      i{
+        color: $md-blue-500;
+      }
     }
   }
 

@@ -49,6 +49,7 @@ import './email';
 import './fullcalendar';
 import './googleMaps';
 import './utils';
+import './fontawesome5';
 
 import './sweetalert2';
 import './select2';

@@ -10,6 +10,7 @@ Auth::routes();
 */
 Route::group(['prefix' => ADMIN, 'as' => ADMIN . '.', 'middleware'=>['auth', 'Role:0']], function () {
     Route::get('/', 'DashboardController@index')->name('dash');
+    Route::get('/posts', 'DashboardController@getPosts')->name('posts');
     Route::resource('users', 'UserController');
 });
 
