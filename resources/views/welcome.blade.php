@@ -79,7 +79,7 @@
 
             <div class="content">
                 <div class="title m-b-md">
-                    Laravel
+                    <img src="/images/header-dacia-1.jpg" alt="Dacia Unita"/>
                 </div>
 
                 <div class="links">

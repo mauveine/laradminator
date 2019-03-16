@@ -28,6 +28,17 @@
             @endif
         </div>
 
+        <div class="form-group{{ $errors->has('mobile_phone') ? ' has-error' : '' }}">
+            <label for="mobile_phone" class="text-normal text-dark">Telefon</label>
+            <input id="mobile_phone" type="text" class="form-control" name="mobile_phone" value="{{ old('mobile_phone') }}" required autofocus>
+
+            @if ($errors->has('mobile_phone'))
+                <span class="form-text text-danger">
+                    <small>{{ $errors->first('mobile_phone') }}</small>
+                </span>
+            @endif
+        </div>
+
         <div class="form-group{{ $errors->has('password') ? ' has-error' : '' }}">
             <label for="password" class="text-normal text-dark">Password</label>
             <input id="password" type="password" class="form-control" name="password" required>

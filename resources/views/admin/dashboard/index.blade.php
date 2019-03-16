@@ -5,7 +5,6 @@
         <div class="masonry-sizer col-md-6"></div>
         <div class="masonry-item  w-100">
             <div class="row gap-20 bd bgc-white">
-                <!-- #Toatl Visits ==================== -->
                 <div class='col-12 p-30'>
                     <div class="row">
                         <div class="col-12 text-center">

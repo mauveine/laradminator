@@ -17551,6 +17551,20 @@ footer {
   }
 }
 
+.posts-view-group .post-title-toggle {
+  cursor: pointer;
+}
+
+.posts-view-group .approve {
+  color: #1b5e20;
+  cursor: pointer;
+}
+
+.posts-view-group .approved {
+  color: #a5d6a7;
+  cursor: default;
+}
+
 .centerY {
   top: 50%;
   -webkit-transform: translateY(-50%);

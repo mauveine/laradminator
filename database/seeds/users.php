@@ -20,7 +20,7 @@ class users extends Seeder
         for ($i = 1; $i <= 1 ; $i++) {
             $data = [
                 'name' => 'Leonard Test',
-                'email' => 'leonard+laradmin@cloud-us.eu',
+                'email' => 'leonard+du1@cloud-us.eu',
                 'password' => 'qwert1',
                 'role'     => 0,
                 'bio'      => $faker->realText(),

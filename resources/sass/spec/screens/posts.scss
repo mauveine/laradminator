@@ -1,0 +1,15 @@
+.posts-view-group{
+  .post-title-toggle{
+    cursor: pointer;
+  }
+
+  .approve{
+    color: $md-green-900;
+    cursor: pointer;
+  }
+
+  .approved{
+    color: $md-green-200;
+    cursor: default;
+  }
+}

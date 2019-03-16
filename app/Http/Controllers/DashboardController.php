@@ -2,6 +2,8 @@
 
 namespace App\Http\Controllers;
 
+use App\Models\User\Proposal;
+
 class DashboardController extends Controller
 {
     public function index()
@@ -11,6 +13,8 @@ class DashboardController extends Controller
     }
 
     public function getPosts () {
-        return view('admin.dashboard.posts');
+        $posts = Proposal::query()->take(10)->get();
+        dump(count($posts));
+        return view('admin.dashboard.posts', ['posts' => $posts]);
     }
 }

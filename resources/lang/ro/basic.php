@@ -2,7 +2,7 @@
 
 return [
     'home_title' => 'Acasă',
-    'posts_title' => 'Postări',
+    'posts_title' => 'Propuneri',
     'edit_form_title' => 'Modifică Informațiile',
     'basic_info_title' => 'Informațiile dvs.',
     'label' => [
