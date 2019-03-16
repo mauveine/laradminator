@@ -75,10 +75,10 @@ class UserController extends Controller {
         $this->validate($request, User::rules(true, $id));
 
         $item = User::findOrFail($id);
-
         $item->update($request->all());
+        $item->save();
 
-        return redirect()->route(ADMIN . '.users.index')->withSuccess(trans('app.success_update'));
+        return back()->withSuccess(trans('app.success_update'));
     }
 
     /**

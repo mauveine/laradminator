@@ -13,6 +13,8 @@ class users extends Seeder
     public function run()
     {
         $faker = Faker\Factory::create('ro_RO');
+        $fakerPerson = (new Faker\Generator());
+        $fakerPerson->addProvider(new Faker\Provider\ro_RO\Person($fakerPerson));
 
 
         for ($i = 1; $i <= 1 ; $i++) {
@@ -22,7 +24,8 @@ class users extends Seeder
                 'password' => 'qwert1',
                 'role'     => 0,
                 'bio'      => $faker->realText(),
-                'mobile_phone' => $faker->phoneNumber
+                'mobile_phone' => $faker->phoneNumber,
+                'cnp' => $fakerPerson->cnp
             ];
             $user = \App\Models\User::query()->create($data);
             $userAddress = \App\Models\User\Address::query()->create([

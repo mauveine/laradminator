@@ -23,6 +23,9 @@ class CreateUsersTable extends Migration
             $table->integer('role')->default(0);
             $table->text('bio')->nullable();
             $table->string('mobile_phone')->unique();
+            $table->string('cnp')->unique();
+            $table->integer('capital_parts')->default(rand(0,21));
+            $table->tinyInteger('gender')->default(1);
 
             $table->rememberToken();
             $table->softDeletes();

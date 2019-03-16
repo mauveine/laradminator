@@ -15,7 +15,7 @@ class User extends Authenticatable {
      * @var array
      */
     protected $fillable = [
-        'name', 'email', 'password', 'avatar', 'bio', 'role'
+        'name', 'email', 'password', 'avatar', 'bio', 'role', 'cnp', 'mobile_phone', 'capital_parts', 'gender'
     ];
 
     /**
@@ -46,6 +46,7 @@ class User extends Authenticatable {
         return array_merge($commun, [
             'email' => 'required|email|max:255|unique:users',
             'password' => 'required|confirmed|min:6',
+            'cnp' => 'required|min:13|max:13|unique:users'
         ]);
     }
 

@@ -6,7 +6,8 @@ class DashboardController extends Controller
 {
     public function index()
     {
-        return view('admin.dashboard.index');
+        $user = \Auth::user();
+        return view('admin.dashboard.index', ['user' => $user]);
     }
 
     public function getPosts () {

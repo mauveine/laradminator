@@ -4,7 +4,7 @@ return [
 
 	// My controllers
 	"success_store"   => "Item added",
-	"success_update"  => "Updated successfully",
+	"success_update"  => "Informatii salvate cu success",
 	"success_destroy" => "Removed successfully",
 
 	// My Views
